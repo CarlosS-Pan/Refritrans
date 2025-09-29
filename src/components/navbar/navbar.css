@@ -1,22 +1,23 @@
+.flex {
+ display: flex;
+}
 .navbar {
-    display: flex;
     flex-direction:row;
     justify-content: space-between;
     /* margin: 2px; */
     top: 0px;
-    outline: dotted red;
     width: 100vw;
-    position: sticky;
-    /* text-align: center; */
+    position: static;
+    /* outline: dotted red; */
+    align-items: center;
 }
 .logo{
-    display: flex;
     margin: 5px;
     padding: 3px;
     /* outline: double black; */
+
 }
 .links {
-    display: flex;
     height: 100%;
     /* width: 400px; */
     max-width: 450px;
@@ -26,16 +27,42 @@
     margin: 16px 25px;
 }
 .link {
-    display: flex;
     margin: 0 50px 0 0;
     /* outline: dotted green; */
     
 }
 .link-contact {
-    display: flex;
     color: rgb(255, 255, 255);
     padding: 10px 15px;
     white-space: nowrap;
     border-radius: 29px;
     background-color: #133995;
+}
+
+.hero {
+    justify-content: center;
+    align-items: center;
+    
+    height: 100dvh;
+    border-radius: 50px;
+    margin:  3%;
+    
+    position: relative; 
+    background-size:cover;
+    background-position: 90% 45%;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    flex-direction: column;
+    color: white;
+    
+    max-width: 60%;
+    bottom: 0;
+    left: 0;
+    margin: 7%;
+    
+    position: absolute;
+
+    outline:thick dotted black;
 }
