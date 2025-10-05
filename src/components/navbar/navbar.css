@@ -12,9 +12,9 @@
     align-items: center;
 }
 .logo{
-    margin: 5px;
+    margin: 5px 10px;
     padding: 3px;
-    /* outline: double black; */
+    width: 35%;
 
 }
 .links {
@@ -33,19 +33,22 @@
 }
 .link-contact {
     color: rgb(255, 255, 255);
+
+    width:fit-content;
     padding: 10px 15px;
     white-space: nowrap;
     border-radius: 29px;
     background-color: #133995;
+    border-color:transparent;
 }
 
 .hero {
     justify-content: center;
     align-items: center;
     
-    height: 100dvh;
+    height: 85dvh;
     border-radius: 50px;
-    margin:  3%;
+    margin:  2%;
     
     position: relative; 
     background-size:cover;
@@ -60,9 +63,9 @@
     max-width: 60%;
     bottom: 0;
     left: 0;
-    margin: 7%;
+    margin: 6% 3%;
     
     position: absolute;
 
-    outline:thick dotted black;
+    /* outline:thick dotted black; */
 }
