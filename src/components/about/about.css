@@ -1,0 +1,32 @@
+
+.flex {
+    display: flex;
+}
+
+.about-container {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    
+    outline: dotted purple;
+}
+.about-text {
+    flex-direction: column;
+    max-width: 30%;
+
+    margin: 0 5%;
+}
+
+.image-container {
+    width: 70%;
+    height: 70%;
+    align-self: end;
+
+    margin: 0 5%;
+    outline: dotted black;
+}
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto; 
+}
