@@ -4,9 +4,10 @@
 }
 
 .about-container {
+    position: relative;
     flex-direction: column;
     width: 80%;
-    margin: 0 auto;
+    margin: 5% auto;
     
     outline: dotted purple;
 }
@@ -16,17 +17,39 @@
 
     margin: 0 5%;
 }
+.about-text h2{
+    color: #133995
+}
 
 .image-container {
     width: 70%;
     height: 70%;
     align-self: end;
 
-    margin: 0 5%;
-    outline: dotted black;
+    margin: 5% 5% 2%;
+    /* outline: dotted black; */
 }
 .image-container img {
     display: block;
     width: 100%;
     height: auto; 
+}
+
+.data{
+    color: #133995;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 10% 5%;
+}
+.data li{
+    list-style-type: none;
+}
+
+.bg-snowflake {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 2%;
+
 }
