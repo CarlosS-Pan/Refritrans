@@ -8,20 +8,50 @@
 
     top: 0;
     left: 0;
-    margin: 0;
+    right: 0;
+    /* margin: 0; */
     width: 100%;
-    height: 500px;
+    height: 400px;
     /* outline: dashed pink; */
 }
-.yoe img {
+.yoe{
+    width: 100%;
+}
+
+.ice img{
     position: absolute;
-    
-    top: 0;
-    left: 0;
     width: 100%;
 }
 
 .pic-grid {
     display: grid;
-    grid-template-columns: 2;
+    /* outline: dotted red;bg */
+    width: 500px;
+    gap: 20px;
+    z-index: 5;
+}
+
+/* grid-area: row-start / col-start / row-end / col-end */
+.item-1 {
+    grid-area: 1 / 1 / 4 / 3;
+    background-position: 90% 45%;
+}
+.item-2 {
+    grid-area: 4 / 1 / 6 / 3;
+    background-position: 100% 0%;
+}
+.item-3 {
+    grid-area: 1 / 3 / 2 / 5;
+}
+.item-4 {
+    grid-area: 2 / 3 / 6 / 5;
+    background-position: 35% 0%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+    background-size:cover;
+    background-repeat: no-repeat;
 }
