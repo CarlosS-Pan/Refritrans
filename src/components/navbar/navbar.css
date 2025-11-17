@@ -33,13 +33,20 @@
     /* max-width: 500px; */
     /* outline:dashed blue; */
 }
+ul.links li {
+    list-style: none;
+}
 .link {
     margin: 0 50px 0 0;
     /* outline: dotted green; */
     
 }
-.link-contact {
+
+/* a inside ul's with links class */
+ul.links li a {
     color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
 
     padding: 10px 15px;
     width:fit-content;
@@ -50,4 +57,11 @@
     border-color:transparent;
 
     /* outline: thick solid pink; */
+}
+
+.btn-rotation {
+    --fa-rotate-angle: -45deg;
+}
+.contact-icon-navbar {
+    margin-left: 5px;
 }

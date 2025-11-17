@@ -6,3 +6,5 @@ export { default as Ice } from "./images/Ice.png";
 export { default as grid1 } from "./images/grid1.png";
 export { default as grid2 } from "./images/grid2.webp";
 export { default as grid4 } from "./images/grid4.jpg";
+export { default as bgsnowflakes } from "./icons/bg-snowflakes.png";
+export { default as servicesPic } from "./images/services-pic.jpg";

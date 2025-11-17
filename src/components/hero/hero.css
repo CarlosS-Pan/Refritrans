@@ -43,7 +43,7 @@
 
     /* outline:thick dotted black; */
 }
-.btn-hero {
+div.hero a {
     color: rgb(255, 255, 255);
 
     padding: 10px 15px;
@@ -53,4 +53,7 @@
     background-color: #133995;
     border-radius: 50px;
     border-color:transparent;
+}
+.contact-icon-hero {
+    margin-right: 5px;
 }

@@ -1,5 +1,7 @@
 import './navbar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { LogoComplete } from '../../assets';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons/faCircleArrowRight';
 
 const Navbar = () => {
     return (
@@ -12,11 +14,12 @@ const Navbar = () => {
                 <li className="flex link">Inicio</li>
                 <li className="flex link">Productos</li>
                 <li className="flex link">Servicios</li>
-                <li className="flex link-contact">
-                    Contacto ☺︎
-                    {/* <svg src="ola" alt="↑" /> */}
+                <li>
+                    <a>
+                        Contacto
+                        <FontAwesomeIcon icon={faCircleArrowRight} size="lg" rotateBy className='btn-rotation contact-icon-navbar'/>
+                    </a>
                 </li>
-                
             </ul>
         </nav>
         

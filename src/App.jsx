@@ -1,4 +1,5 @@
-import { About, Hero, Navbar, YOE} from "./components";
+import { About, Hero, Navbar, YOE, HServices} from "./components";
+import './App.css';
 
 function App() {
 
@@ -7,8 +8,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <YOE />
-      
+      <div className="bg-yoe-hs">
+        <YOE />
+        <HServices />
+      </div>
     </>
   )
 }

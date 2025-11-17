@@ -14,20 +14,19 @@ return (
             <div className="flex image-container">
                 <img src={AboutSupra} alt="SupraUnit" />
             </div>
-            <ul className="flex data">
-
                 <img className='bg-snowflake' src={Snowflake} alt="" />
-                <li className="ct-1">
+            <ul className="flex data">
+                <li>
                     <h2 className="prueba1">1000+</h2>
-                    <div className="description">Lorem ipsum dolor sit amet</div>
+                    <div className="description-about">Lorem ipsum doloasdasdasda asdasdasd asdasdasd asdasdasd ar sit amet</div>
                 </li>
-                <li className="ct-2">
-                    <h2 className="prueba2">1000+</h2>
-                    <div className="description">Lorem ipsum dolor sit amet</div>
+                <li>
+                    <h2 className="prueba2">2000+</h2>
+                    <div className="description-about">Loremasdasdasd asdasdasd asd  ipsum dolor sit amet</div>
                 </li>
-                <li className="ct-3">
-                    <h2 className="prueba3">1000+</h2>
-                    <div className="description">Lorem ipsum dolor sit amet</div>
+                <li>
+                    <h2 className="prueba3">3000+</h2>
+                    <div className="description-about">Lorem ipsum dolor sit amet</div>
                 </li>
             </ul>
         </div>
