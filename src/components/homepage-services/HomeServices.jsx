@@ -1,5 +1,5 @@
 import "./homeservices.css"
-import { servicesPic } from "../../assets/index";
+import { servicesPic, Snowflake } from "../../assets/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -30,7 +30,51 @@ const HomeServices = () => {
                 </div>
             </div>
             <div className="services-grid">
-                ola
+                <img src={Snowflake} alt="" className="blur"/>
+                <div className="sitem-1">
+                    <div className="flex sitem-container">
+                        <div className="sitem-svg">
+                            <FontAwesomeIcon icon={faCircleArrowRight} size="lg"/>
+                        </div>
+                        <div className="sitem-text">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="sitem-1">
+                    <div className="flex sitem-container">
+                        <div className="sitem-svg">
+                            <FontAwesomeIcon icon={faCircleArrowRight} size="lg"/>
+                        </div>
+                        <div className="sitem-text">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="sitem-1">
+                    <div className="flex sitem-container">
+                        <div className="sitem-svg">
+                            <FontAwesomeIcon icon={faCircleArrowRight} size="lg"/>
+                        </div>
+                        <div className="sitem-text">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="sitem-1">
+                    <div className="flex sitem-container">
+                        <div className="sitem-svg">
+                            <FontAwesomeIcon icon={faCircleArrowRight} size="lg"/>
+                        </div>
+                        <div className="sitem-text">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -18,10 +18,13 @@
     /* outline: dotted red; */
 }
 .logo{
-    margin: 5px 10px;
+    margin: 2px 10px;
     padding:  0 3px;
     height: 75px;
 
+}
+a.logo img {
+    width: 70%;
 }
 .links {
     justify-content:space-evenly;
