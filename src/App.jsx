@@ -1,17 +1,24 @@
-import { About, Hero, Navbar, YOE, HServices} from "./components";
 import './App.css';
+import { Routes, Route } from "react-router-dom"
+
+// static components
+import { Navbar, Footer} from "./components";
+
+// pages
+import { Home, Services } from "./pages";
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <div className="bg-yoe-hs">
-        <YOE />
-        <HServices />
-      </div>
+      <Routes>
+
+        <Route path="/" element={<Home />}/>
+        <Route path="/servicios" element={<Services />}/>
+
+      </Routes>
+      <Footer/>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import './about.css'
-import {AboutSupra, Snowflake} from '../../assets';
+import {AboutSupra, Snowflake} from '../../../assets';
 
 const About = () => {
 return (

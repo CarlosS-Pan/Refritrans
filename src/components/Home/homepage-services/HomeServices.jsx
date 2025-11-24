@@ -1,5 +1,5 @@
 import "./homeservices.css"
-import { servicesPic, Snowflake } from "../../assets/index";
+import { servicesPic, Snowflake } from "../../../assets/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
@@ -19,7 +19,7 @@ const HomeServices = () => {
                 consequatur ea voluptatem corporis veniam 
                 distinctio placeat vel.
             </p>
-            <NavLink to="/Servicios" className="serv-btn">
+            <NavLink to="/servicios" className="serv-btn">
                 <FontAwesomeIcon icon={faCircleArrowRight} rotateBy className='btn-rotation contact-icon-yoe' size='lg'/>
                 Ver servicios
             </NavLink>

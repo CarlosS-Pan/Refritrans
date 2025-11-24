@@ -58,7 +58,7 @@
 ul.data li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     list-style-type: none;
     height: 200px;

@@ -1,5 +1,5 @@
 import './hero.css'
-import { HeroSupra } from '../../assets';
+import { HeroSupra } from '../../../assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';

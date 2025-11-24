@@ -1,5 +1,5 @@
 import './yoe.css'
-import { Ice, grid1, grid2, grid4, bgsnowflakes } from "../../assets/index";
+import { Ice, grid1, grid2, grid4, bgsnowflakes } from "../../../assets/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faCircleArrowRight, faTemperatureLow } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
