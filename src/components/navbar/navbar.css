@@ -18,9 +18,11 @@
     /* outline: dotted red; */
 }
 .logo{
+    width: wrap;
     margin: 2px 10px;
     padding:  0 3px;
-    height: 75px;
+    /* height: 75px; */
+    outline: dotted red;
 
 }
 a.logo img {
@@ -47,6 +49,7 @@ ul.links li {
 
 /* a inside ul's with links class */
 ul.links li a {
+    z-index: 1000;
     color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;

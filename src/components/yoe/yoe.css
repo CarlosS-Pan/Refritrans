@@ -3,7 +3,6 @@
 }
 
 .yoe {
-    z-index: -2;
     position: relative;
     /* background: linear-gradient(to right,#133995, #041643); */
 
@@ -47,7 +46,6 @@
 }
 
 .pic-grid {
-    z-index: 5;
     display: grid;
     width: 600px;
     height: 500px;
@@ -99,7 +97,7 @@
 }
 
 .description-container {
-    z-index: 6;
+    z-index: 1;
 
     flex-direction: column;
     justify-content: space-evenly;
@@ -210,13 +208,13 @@ div.description-container a {
 .contact-icon-yoe {
     margin-right: 5px;
 }
-.snowflakes {
-    
-    z-index: -10;
+.snowflakes-container {
     /* width: 60%; */
     height: 100%;
     position: absolute;
     top: 250px;
     right: 0;
     bottom: 0;
+    user-select: none;
+    pointer-events: none;
 }

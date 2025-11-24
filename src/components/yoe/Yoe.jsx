@@ -2,6 +2,7 @@ import './yoe.css'
 import { Ice, grid1, grid2, grid4, bgsnowflakes } from "../../assets/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faCircleArrowRight, faTemperatureLow } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 
 function CheckList({children}) {
@@ -74,10 +75,10 @@ function Yoe() {
               </div>
             </div>
           </div>
-          <a>
+          <NavLink to="/Productos">
             <FontAwesomeIcon icon={faCircleArrowRight} rotateBy className='btn-rotation contact-icon-yoe' size='lg'/>
             Ver productos
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className="snowflakes-container">
