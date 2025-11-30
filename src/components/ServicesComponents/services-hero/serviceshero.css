@@ -1,5 +1,55 @@
-.hero-ser {
+.ser-hero {
+    justify-content: center;
+    margin-top: 85px;
     width: 100%;
     height: 500px;
-    background-color: purple;
+    /* background-color: purple; */
+    outline: solid black 2px;
+}
+
+.serhero-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(186, 199, 72);
+    border-radius: 30px;
+}
+
+.serhero-info-container {
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 90%;
+    background-color: rgb(172, 56, 56);
+}
+.serhero-title {
+    width: fit-content;
+
+    outline: solid 2px white;
+}
+.serhero-info {
+    width: fit-content;
+    outline: dotted 2px green;
+}
+.sehero-btn {
+    width: fit-content;
+    outline: dashed 2px blueviolet;
+}
+
+.serhero-img-container {
+    position: relative;
+    color: white;
+    width: 400px;
+    height: 90%;
+    background-color: blue;
+}
+.sertag {
+    left: -50px;
+    bottom: 50px;
+    position: absolute;
+    width: fit-content;
+    background-color: bisque;
 }

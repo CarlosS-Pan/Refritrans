@@ -1,7 +1,3 @@
-.flex {
-    display: flex;
-}
-
 .hservices {
     z-index: 1;
     flex-direction: column;
