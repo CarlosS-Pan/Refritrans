@@ -9,6 +9,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  --main-gradient: linear-gradient(to right,#133995, #041643);
+  --primary-color: #133995;
 }
 *{
   box-sizing: border-box;

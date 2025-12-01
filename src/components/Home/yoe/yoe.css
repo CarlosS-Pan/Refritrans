@@ -188,7 +188,7 @@ div.square-container li {
 
 /* 133995 */
 div.description-container a {
-    color: #133995;
+    color: var(--primary-color);
     justify-content: center;
     align-items: center;
     
