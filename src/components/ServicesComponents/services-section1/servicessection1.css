@@ -1,0 +1,66 @@
+.S1container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 800px;
+    gap: 5%;
+    outline: solid salmon;
+}
+
+.S1info {
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 30%;
+    height: 80%;
+
+    outline: solid black;
+}
+.bullets-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+    padding: 0 5px 0;
+    gap: 8px;
+
+    outline: dashed orangered;
+}
+.bullet-point {
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    gap: 15px;
+
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+.bullet-icon {
+    flex-shrink: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    
+    background-color: #ededeb;
+    border-radius: 12px;
+}
+.bullet-info {
+    align-items: center;
+    width: 100%;
+
+    line-height: 100%;
+    /* outline: dotted blue; */
+}
+
+.S1pic {
+    width: 40%;
+    height: 80%;
+
+    outline: solid green;
+}

@@ -108,9 +108,9 @@
     /* height: fit-content; */
     /* outline: solid 2px blue; */
 }
-.serinfo-container p {
-    /* outline: solid 2px whitesmoke; */
-}
+/* .serinfo-container p {
+    outline: solid 2px whitesmoke;
+} */
 div.serinfo-container div {
     color: var(--primary-color);
     justify-content: center;
