@@ -12,6 +12,7 @@ export { default as HomeServices } from "./Home/homepage-services/HomeServices";
 // services page
 export { default as ServicesHero } from "./ServicesComponents/services-hero/ServicesHero";
 export { default as ServicesSection1 } from "./ServicesComponents/services-section1/ServicesSection1";
+export { default as ServicesSection2 } from "./ServicesComponents/services-section2/ServicesSection2";
 
 // footer
 export { default as Footer } from "./Footer/Footer";

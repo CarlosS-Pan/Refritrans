@@ -1,4 +1,4 @@
-import { ServicesHero, ServicesSection1 } from "../../components";
+import { ServicesHero, ServicesSection1, ServicesSection2 } from "../../components";
 
 
 function Services() {
@@ -6,6 +6,7 @@ function Services() {
     <>
         <ServicesHero/>
         <ServicesSection1/>
+        <ServicesSection2/>
     </>
   )
 }
