@@ -1,14 +1,14 @@
 import './yoe.css'
 import { Ice, grid1, grid2, grid4, bgsnowflakes } from "../../../assets/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faCircleArrowRight, faTemperatureLow } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faCheck, faCircleArrowRight, faTemperatureLow } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 
 
 function CheckList({children}) {
   return(
     <li className="check-item">
-    <FontAwesomeIcon icon={faCheck} style={{color: '#133995'}} size='lg'/>
+    <FontAwesomeIcon icon={faCheck} style={{color: 'var(--primary-color)'}} size='lg'/>
     {children}
   </li>
   );
@@ -75,9 +75,11 @@ function Yoe() {
               </div>
             </div>
           </div>
-          <NavLink to="/Productos">
-            <FontAwesomeIcon icon={faCircleArrowRight} rotateBy className='btn-rotation contact-icon-yoe' size='lg'/>
+          <NavLink to="/Productos" className="flex">
             Ver productos
+            <div className="flex">
+              <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
+            </div>
           </NavLink>
         </div>
       </div>

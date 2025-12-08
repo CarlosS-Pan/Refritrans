@@ -35,15 +35,30 @@
     /* outline:thick dotted black; */
 }
 div.hero a {
-    color: rgb(255, 255, 255);
-
-    padding: 10px 15px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    padding: 10px 10px;
     width:fit-content;
     white-space: nowrap;
     
-    background-color: #133995;
+    background-color: var(--primary-color);
     border-radius: 50px;
     border-color:transparent;
+    /* outline: thick solid pink; */
+}
+div.hero a > div {
+    justify-content: center;
+    align-items: center;
+    
+    /* height: 40px; */
+    /* width: 40px; */
+    padding: 10px;
+
+    border-radius: 50%;
+    background: white;
 }
 .contact-icon-hero {
     margin-right: 5px;

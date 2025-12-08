@@ -28,7 +28,7 @@
     /* outline:solid green; */
 }
 .ice{
-    margin: -1px 0 0 0;
+    margin: -3px 0 0 0;
     position: relative;
     /* top: -10; */
     width: 100%;
@@ -192,16 +192,28 @@ div.description-container a {
     justify-content: center;
     align-items: center;
     
-    padding: 10px 15px;
+    gap: 10px;
+    padding: 10px 10px;
     width:fit-content;
     white-space: nowrap;
     
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
     border-color:transparent;
-    
     /* outline: thick solid pink; */
 }
+div.description-container a > div {
+    justify-content: center;
+    align-items: center;
+    
+    /* height: 40px; */
+    /* width: 40px; */
+    padding: 10px;
+
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
 .contact-icon-yoe {
     margin-right: 5px;
 }

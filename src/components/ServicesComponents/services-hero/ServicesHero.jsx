@@ -3,6 +3,8 @@ import {servicesPic, Snowflake} from "../../../assets"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSnowflake } from "@fortawesome/free-regular-svg-icons"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { NavLink } from 'react-router-dom';
+
 
 function ServicesHero() {
   return (
@@ -25,12 +27,12 @@ function ServicesHero() {
                   temporibus vel ex, qui quia, officiis aut?
                 </p>
               </div>
-              <div className="flex serhero-btn">
+              <NavLink to="/Contacto" className="flex serhero-btn">
                 Contactanos
                 <div className="flex">
                   <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
                 </div>
-              </div>
+              </NavLink>
             </div>
             <div className="serhero-img-container" style={{
               backgroundImage:`url(${servicesPic})`}}>

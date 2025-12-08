@@ -1,4 +1,5 @@
 export { default as LogoComplete } from "./icons/RefritransLogoCompleteFinal.svg";
+export { default as LogoCompleteWhite } from "./icons/RefritransLogoCompleteFinalWhite.svg";
 export { default as Snowflake } from "./icons/Snowflake.svg";
 export { default as Ice } from "./icons/Ice.svg";
 export { default as bgsnowflakes } from "./icons/bg-snowflakes.png";

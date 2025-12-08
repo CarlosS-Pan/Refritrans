@@ -1,6 +1,96 @@
 .section2 {
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 300px;
+    height: fit-content;
+    margin: 0 0 40px;
 
-    outline: solid purple;
+    /* outline: solid red; */
+}
+
+.section2-container {
+    color: white;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: -1px; */
+    /* padding: 0 -5px; */
+    width: 90%;
+    height: 90%;
+        
+    border-radius: 40px;
+    background-image: var(--main-gradient);
+    /* outline: solid seagreen; */
+    /* overflow: hidden; */
+    
+}
+.section2-container > img {
+    position: relative;
+    top: 0px;
+    margin-top: -5px;
+    width: calc(100% + 5px);;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+.section2-container h1 {
+    margin: 0 0 24px;
+}
+.sersection2-btn {
+    /* z-index: 1; */
+
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    padding: 10px 10px;
+    margin: 3rem 0 4rem;
+    width:fit-content;
+    white-space: nowrap;
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border-color:transparent;
+    /* outline: thick solid pink; */
+
+}
+.sersection2-btn > div {
+    justify-content: center;
+    align-items: center;
+    
+    /* height: 40px; */
+    /* width: 40px; */
+    padding: 10px;
+
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.dual-container {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    /* outline: solid green; */
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+    user-select: none;
+    pointer-events: none;
+}
+.sect2-snowflakes {
+    justify-content: center;
+    /* align-items: center; */
+    position: absolute;
+    width: 100%;
+    gap: 40%;
+    
+    bottom: -200px;
+    /* outline: solid red; */
+}
+
+.sect2-snowflakes > img {
+    width: 400px;
+
 }

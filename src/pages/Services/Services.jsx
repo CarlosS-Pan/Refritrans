@@ -3,11 +3,11 @@ import { ServicesHero, ServicesSection1, ServicesSection2 } from "../../componen
 
 function Services() {
   return (
-    <>
+    <div className="page-services">
         <ServicesHero/>
         <ServicesSection1/>
         <ServicesSection2/>
-    </>
+    </div>
   )
 }
 
