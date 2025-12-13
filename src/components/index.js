@@ -16,3 +16,4 @@ export { default as ServicesSection2 } from "./ServicesComponents/services-secti
 
 // footer
 export { default as Footer } from "./Footer/Footer";
+export { default as Map } from "./Footer/Map";

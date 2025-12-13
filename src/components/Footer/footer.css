@@ -72,9 +72,9 @@ div.pages-footer a {
 .map-footer {
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 350px;
-    outline: dotted skyblue;
+    /* width: 600px; */
+    /* height: 350px; */
+    /* outline: dotted skyblue; */
 }
 
 .bottom-footer {

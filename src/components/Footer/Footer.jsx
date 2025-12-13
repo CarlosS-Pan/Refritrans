@@ -3,12 +3,14 @@ import { LogoComplete, LogoCompleteWhite } from "../../assets"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faMapPin, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { NavLink } from "react-router-dom"
+import { Map } from "../index";
 
 const details =[
   {icon: <FontAwesomeIcon icon={faPhone}/>, text: "(503) 2263-9398"},
   {icon: <FontAwesomeIcon icon={faEnvelope}/>, text: "bbaires@yahoo.com"},
   {icon: <FontAwesomeIcon icon={faMapPin}/>, text: "Comu. Las Lajas, Pje. Romero No. 41, \nCol Escalón atrás de Mr. Bodeguitas San Salvador"}
 ]
+
 
 const Footer = () => {
     return (
@@ -49,7 +51,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="flex map-footer">
-                  mapa
+                  <Map/>
                 </div>
               </div>
             </div>
