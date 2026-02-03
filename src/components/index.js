@@ -8,7 +8,8 @@ export { default as YOE } from "./Home/yoe/Yoe";
 export { default as HomeServices } from "./Home/homepage-services/HomeServices";
 
 // products
-
+export { default as ProductsHero } from "./ProductsComponents/products-hero/ProductsHero";
+export { default as ProductsSection1 } from "./ProductsComponents/services-section1/ProductsSection1";
 // services page
 export { default as ServicesHero } from "./ServicesComponents/services-hero/ServicesHero";
 export { default as ServicesSection1 } from "./ServicesComponents/services-section1/ServicesSection1";
