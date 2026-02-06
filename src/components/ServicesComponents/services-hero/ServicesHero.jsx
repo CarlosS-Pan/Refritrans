@@ -1,5 +1,5 @@
 import "./serviceshero.css"
-import {servicesPic, Snowflake} from "../../../assets"
+import { servicesPic, Snowflake } from "../../../assets"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSnowflake } from "@fortawesome/free-regular-svg-icons"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"

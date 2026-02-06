@@ -2,7 +2,8 @@ import "./productssection1.css"
 
 function ProductsSection1() {
   return (
-    <div>ProductsSection1</div>
+    <div>
+      ProductsSection1</div>
   )
 }
 

@@ -2,8 +2,8 @@ import { ProductsHero } from "../../components"
 
 function Products() {
   return (
-    <div>
-        ola amigos de youtube
+    <div className="page-products">
+        <ProductsHero />
     </div>
   )
 }

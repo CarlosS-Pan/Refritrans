@@ -1,17 +1,22 @@
 import "./productshero.css"
+import { productsPic, Snowflake } from "../../../assets"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSnowflake } from "@fortawesome/free-regular-svg-icons"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { NavLink } from "react-router-dom"
 
 function ProductsHero() {
   return (
-    <div className="flex ser-hero">
-        <div className="flex serhero-container">
+    <div className="flex prod-hero">
+        <div className="flex prodhero-container">
             <img src={Snowflake} alt=""/>
-            <div className="flex serhero-info-container">
-              <div className="serhero-title">
+            <div className="flex prodhero-info-container">
+              <div className="prodhero-title">
                 <h1>
                   Cuidado Integral para tus Sistemas de Refrigeracion en Ruta
                 </h1>
               </div>
-              <div className="serhero-info">
+              <div className="prodhero-info">
                 <p>
                   Lorem ipsum dolor sit amet 
                   consectetur adipisicing elit. 
@@ -28,12 +33,12 @@ function ProductsHero() {
                 </div>
               </NavLink>
             </div>
-            <div className="serhero-img-container" style={{
-              backgroundImage:`url(${servicesPic})`}}>
-              <div className="flex sertag">
-                <div className="flex serinfo-container">
+            <div className="prodhero-img-container" style={{
+              backgroundImage:`url(${productsPic})`}}>
+              <div className="flex prodtag">
+                <div className="flex prodinfo-container">
                   <p>
-                  Servicios
+                  Productos
                   </p>
                   <div className="flex">
                     <FontAwesomeIcon icon={faSnowflake}/>

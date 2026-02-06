@@ -11,3 +11,5 @@ export { default as grid2 } from "./images/grid2.webp";
 export { default as grid4 } from "./images/grid4.jpg";
 export { default as servicesPic } from "./images/services-pic.jpg";
 export { default as servicesSection1 } from "./images/services-section1.png";
+
+export { default as productsPic } from "./images/products-hero.png";
