@@ -1,6 +1,6 @@
 .prod-section1 {
     justify-content: space-between;
-    padding: 7% 10%;
+    padding: 7% 0 0 10%;
     height: auto;
     width: 100%;
     
@@ -39,17 +39,50 @@
     background-color: var(--primary-color);
 }
 
+.wrapper{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.wrapper::before {
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 460px;
+    width: 75px;
+    background: linear-gradient(to left, rgb(0,0,0,0), #ffffff);
+}
+.wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 460px;
+    width: 100px;
+    background: linear-gradient(to right, rgb(0,0,0,0), #ffffff);
+}
 .carousel-container {
-    width: 600px;
+    /* position: relative; */
+    padding: 15px;
+    width: 900px;
     height: auto;
 
     gap: 50px;
 
+    overflow-x: auto;
+
+    scrollbar-width: none;
     /* outline: dashed 2px red; */
 }
+.carousel-container::-webkit-scrollbar {
+    display:none;
+}
 .card {
+    /* flex: 10 0 0%; */
     flex-direction: column;
-    width: 355px;
+    max-width: 275px;
+    min-width: 355px;
     height: 430px;
 
     border-radius: 10% ;

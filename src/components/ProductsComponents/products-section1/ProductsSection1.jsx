@@ -20,42 +20,74 @@ function ProductsSection1() {
         </div>
       </div>
 
-      <div className="flex carousel-container">
+      <div className="wrapper">
+        <div className="flex carousel-container">
 
-        <article className="flex card">
-          <figure className="card-media">
-            <img src={grid1} alt="" />
-          </figure>
+          <article className="flex card">
+            <figure className="card-media">
+              <img src={grid1} alt="" />
+            </figure>
 
-          <header className="flex card-header">
-            <div className="flex card-header-text">
-              <h3> Carrier </h3>
-              <p> Card description goes here. </p>
-            </div>
-            <div className="flex card-icon">
-              <FontAwesomeIcon icon={faBoxOpen} size="lg"/>
-            </div>
-          </header>
-        </article>
+            <header className="flex card-header">
+              <div className="flex card-header-text">
+                <h3> Carrier </h3>
+                <p> Card description goes here. </p>
+              </div>
+              <div className="flex card-icon">
+                <FontAwesomeIcon icon={faBoxOpen} size="lg"/>
+              </div>
+            </header>
+          </article>
 
-        <article className="card">
-          <figure className="card-media">
-            <img src={grid1} alt="" />
-          </figure>
+          <article className="flex card">
+            <figure className="card-media">
+              <img src={grid1} alt="" />
+            </figure>
 
-          <header className="flex card-header">
-            <div className="flex card-header-text">
-              <h3> Carrier </h3>
-              <p> Card description goes here. </p>
-            </div>
-            <div className="flex card-icon">
-              <FontAwesomeIcon icon={faBoxOpen} size="lg"/>
-            </div>
-          </header>
-        </article>
+            <header className="flex card-header">
+              <div className="flex card-header-text">
+                <h3> Carrier </h3>
+                <p> Card description goes here. </p>
+              </div>
+              <div className="flex card-icon">
+                <FontAwesomeIcon icon={faBoxOpen} size="lg"/>
+              </div>
+            </header>
+          </article>
+          
+          <article className="flex card">
+            <figure className="card-media">
+              <img src={grid1} alt="" />
+            </figure>
 
-        
+            <header className="flex card-header">
+              <div className="flex card-header-text">
+                <h3> Carrier </h3>
+                <p> Card description goes here. </p>
+              </div>
+              <div className="flex card-icon">
+                <FontAwesomeIcon icon={faBoxOpen} size="lg"/>
+              </div>
+            </header>
+          </article>
+          
+          <article className="flex card">
+            <figure className="card-media">
+              <img src={grid1} alt="" />
+            </figure>
 
+            <header className="flex card-header">
+              <div className="flex card-header-text">
+                <h3> Carrier </h3>
+                <p> Card description goes here. </p>
+              </div>
+              <div className="flex card-icon">
+                <FontAwesomeIcon icon={faBoxOpen} size="lg"/>
+              </div>
+            </header>
+          </article>
+
+        </div>
       </div>
     </div>
   )
