@@ -10,6 +10,7 @@ export { default as HomeServices } from "./Home/homepage-services/HomeServices";
 // products page
 export { default as ProductsHero } from "./ProductsComponents/products-hero/ProductsHero";
 export { default as ProductsSection1 } from "./ProductsComponents/products-section1/ProductsSection1";
+export { default as ProductsSection2 } from "./ProductsComponents/products-section2/ProductsSection2";
 
 // services page
 export { default as ServicesHero } from "./ServicesComponents/services-hero/ServicesHero";
