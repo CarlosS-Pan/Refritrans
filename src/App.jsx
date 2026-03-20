@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 
 // static components
 import { Navbar, Footer} from "./components";
@@ -9,8 +9,16 @@ import { Home, Services, Products} from "./pages";
 
 function App() {
 
+  const location = useLocation();
+
+  const pageClass = {
+    "/": "page-home",
+    "/Servicios": "page-services",
+    "/Productos": "page-products",
+  }[location.pathname] || "page-home"
+
   return (
-    <>
+    <div className={pageClass}>
       <Navbar />
       <Routes>
 
@@ -20,7 +28,7 @@ function App() {
 
       </Routes>
       <Footer/>
-    </>
+    </div>
   )
 }
 

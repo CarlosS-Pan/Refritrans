@@ -2,8 +2,9 @@ import "./footer.css"
 import { LogoComplete, LogoCompleteWhite } from "../../assets" 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faMapPin, faPhone } from "@fortawesome/free-solid-svg-icons"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import { Map } from "../index";
+import { useState } from "react"
 
 const details =[
   {icon: <FontAwesomeIcon icon={faPhone}/>, text: "(503) 2263-9398"},
@@ -12,12 +13,20 @@ const details =[
 ]
 
 
+
 const Footer = () => {
+
+  const location = useLocation();
+
+  const isWhiteBg = location.pathname === "/";
+
+  const logo = isWhiteBg ? LogoComplete : LogoCompleteWhite;
+
     return (
       <div className="flex footer-container">
             <div className="flex top-footer">
               <div className="flex info-footer">
-                <img id="footer-logo" src={LogoCompleteWhite} alt="Refritrans El Salvador"/>
+                <img id="footer-logo" src={logo} alt="Refritrans El Salvador"/>
                 <p>
                   Expertos en equipos para Refrigeración de Transporte
                 </p>
