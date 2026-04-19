@@ -31,6 +31,8 @@
 }
 .info-footer img{
     width: 80%;
+    /* max-width: 300px; */
+    max-height: 80px;
 }
 
 .details-container {
@@ -93,4 +95,10 @@ div.pages-footer a {
 }
 .page-services ~ .footer-container .bottom-footer {
     /* border-top: solid 1px white; */
+}
+
+@media (max-width: 1100px) {
+    .top-footer {
+        flex-direction: column;
+    }
 }
