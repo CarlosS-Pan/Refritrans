@@ -30,7 +30,9 @@ return (
                     <img src={AboutSupra} alt="SupraUnit" />
                 </div>
             </div>
-            <img className='bg-snowflake' src={Snowflake} alt="" />
+            <div className="snowflake-container">
+                <img className='bg-snowflake' src={Snowflake} alt="" />
+            </div>
         </div>
     </>
 )
