@@ -1,7 +1,8 @@
 .navbar {
-    background-color: white;
-    /* z-index: 100; */
-
+    /* background-color: white; */
+    
+    z-index: 100;
+    
     justify-content: space-between;
     align-items: center;
     padding: 5px 0 0 15px;
@@ -12,6 +13,9 @@
     max-width: 100vw; /*temp until fix width in rest of page*/
     
     position: fixed;
+    
+    background: linear-gradient( to bottom right, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.1));
+    backdrop-filter: blur(5px);
 
     /* outline: dotted red; */
 }
@@ -28,6 +32,8 @@
 /* a.logo img {
     width: 70%;
 } */
+
+/* #region navbar links */
 .links {
     justify-content:space-evenly;
     align-items: center;
@@ -83,7 +89,9 @@ ul.links li {
 .contact-icon-navbar {
     margin-left: 5px;
 }
+/* #endregion */
 
+/* #region sidebar */
 .sidebar {
     display: none;
     position: fixed;
@@ -141,8 +149,9 @@ ul.links li {
 .sidebar li:last-child {
         padding: 5px 15px;
 }
+/* #endregion */
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     .navbar-btn{
         background-color: red;
     }

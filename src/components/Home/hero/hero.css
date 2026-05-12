@@ -34,6 +34,9 @@
 
     /* outline:thick dotted black; */
 }
+.hero-text p {
+    padding-bottom: 16px;
+}
 div.hero a {
     color: white;
     justify-content: center;
@@ -62,4 +65,17 @@ div.hero a > div {
 }
 .contact-icon-hero {
     margin-right: 5px;
+}
+@media (max-width: 1000px) {
+    .hero {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .hero-text  {
+        max-width: none;
+
+    }
+    
 }
