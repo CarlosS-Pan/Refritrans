@@ -21,10 +21,10 @@ function Yoe() {
         <img src={Ice} alt="" />
       </div>
       <div className="flex center-container">
-        <div className="pic-grid">
-          <div className="bg item-1" style={{backgroundImage: `url(${grid1})`}}>
+        <div className="pic-grid" style={{'--grid-1': `url(${grid1})`, '--grid-4': `url(${grid4})`}}>
+          <div className="bg item-1" >
           </div>
-          <div className="bg item-2" style={{backgroundImage: `url(${grid4})`}}>
+          <div className="bg item-2" >
           </div>
           <div className="flex bg item-3">
             <h1>

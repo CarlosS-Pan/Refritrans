@@ -37,11 +37,11 @@ body {
 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 500;
-  font-size: clamp(1.8rem, 6vw , 3.2rem);
+  font-size: clamp(1.8rem, 6vmin , 3.2rem);
   line-height: 1.1;
 }
 h3 {
-  font-size: clamp(1rem, 3.5vw, 1.3rem);
+  font-size: clamp(1rem, 3.5vmin, 1.3rem);
 }
 
 .flex {

@@ -79,3 +79,21 @@ div.hero a > div {
     }
     
 }
+
+@media (max-height: 450px) {
+    .hero-text {
+        max-width: none;
+    }
+    
+}
+@media (max-height: 400px) {
+    .hero-text {
+        margin: 6% 3% 1%;
+    }
+    div.hero a {
+        padding: 5px 10px;
+    }
+    .hero-text p {
+        padding-bottom: 8px;
+    }
+}
