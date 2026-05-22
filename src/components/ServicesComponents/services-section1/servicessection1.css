@@ -4,8 +4,9 @@
     align-items: center;
 
     width: 100%;
-    height: 800px;
+    height: fit-content;
     gap: 5%;
+    padding: 5% 10%;
     /* outline: solid salmon; */
 }
 
@@ -13,7 +14,7 @@
     flex-direction: column;
     /* justify-content: center; */
     
-    width: 30%;
+    width: 40%;
     height: 70%;
 
     /* outline: solid black; */
@@ -39,26 +40,38 @@
 .bullet-point {
     justify-content: center;
     align-items: center;
-
-    height: 65px;
+    
+    height: clamp(65px, auto, 80px);
     gap: 15px;
-
+    
     background-color: #f7f7f7;
     border-radius: 10px;
 }
+.bullet-point:hover {
+    background-color: #ededeb;
+}
+.bullet-point:hover > .bullet-icon {
+    background-color: #f7f7f7;
+}
 .bullet-icon {
     flex-shrink: 0;
-
+    color: grey;
     justify-content: center;
     align-items: center;
 
     width: 40px;
     height: 40px;
 
-    margin-left: 12px;
+    margin: 12px 0 12px 12px;
+    /* margin-left: 12px; */
+
     
     background-color: #ededeb;
     border-radius: 12px;
+}
+
+.bullet-icon:hover {
+    color: var(--primary-color);
 }
 .bullet-info {
     align-items: center;
@@ -73,10 +86,35 @@
 
 .S1pic {
     width: 40%;
-    height: 70%;
+    height: 700px;
 
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     /* border: solid green; */
+}
+
+@media (max-width: 800px) {
+    .S1container {
+        flex-direction: column;
+        padding: 5% 10%;
+    }
+    .S1info {
+        min-width: clamp(250px, 100%, calc(100%));
+    }
+    .S1pic {
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) and (max-height: 800px) {
+    .S1pic {
+        height: 250px;
+        width: 100%;
+        max-width: 450px;
+    }
+    .S1info {
+        width: 100%;
+    }
 }

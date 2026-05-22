@@ -13,10 +13,10 @@ function ServicesSection2() {
           <h1>
             Lorem Ipsum
           </h1>
-          <b>
+          <p>
             Lorem ipsum dolor sit amet,
             consectetur adipiscing elit.
-          </b>
+          </p>
           <NavLink to="/Contacto" className="flex sersection2-btn">
             Contactanos
             <div className="flex">

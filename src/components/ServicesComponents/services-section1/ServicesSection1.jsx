@@ -5,12 +5,12 @@ import { faIcicles, faMicrochip, faRoad, faTemperatureLow, faToolbox, faTruck } 
 
 
 const bullets = [
-  { icon: <FontAwesomeIcon icon={faToolbox} size="md" style={{color: "grey"}}/> , text:"Mantenimiento y reparación para equipos de refrigeración en transporte."},
-  { icon: <FontAwesomeIcon icon={faIcicles} size="md" style={{color: "grey"}}/>, text:"Mantenimiento y reparación de cuartos fríos."},
-  { icon: <FontAwesomeIcon icon={faTemperatureLow} size="md" style={{color: "grey"}}/>, text:"Monitoreo de temperatura por GPS y controles de mantenimiento."},
-  { icon: <FontAwesomeIcon icon={faMicrochip} size="md" style={{color: "grey"}}/>, text:"Servicio de GPS."},
-  { icon: <FontAwesomeIcon icon={faTruck} size="md" style={{color: "grey"}}/>, text:"Administración de mantenimiento para vehículos de transporte."},
-  { icon: <FontAwesomeIcon icon={faRoad} size="md" style={{color: "grey"}}/>, text:"Asistencia en carretera con alcance en Honduras, Guatemala, El Salvador y Nicaragua."},
+  { icon: <FontAwesomeIcon icon={faToolbox} size="md" /> , text:"Mantenimiento y reparación para equipos de refrigeración en transporte."},
+  { icon: <FontAwesomeIcon icon={faIcicles} size="md" />, text:"Mantenimiento y reparación de cuartos fríos."},
+  { icon: <FontAwesomeIcon icon={faTemperatureLow} size="md" />, text:"Monitoreo de temperatura por GPS y controles de mantenimiento."},
+  { icon: <FontAwesomeIcon icon={faMicrochip} size="md" />, text:"Servicio de GPS."},
+  { icon: <FontAwesomeIcon icon={faTruck} size="md" />, text:"Administración de mantenimiento para vehículos de transporte."},
+  { icon: <FontAwesomeIcon icon={faRoad} size="md" />, text:"Asistencia en carretera con alcance en Honduras, Guatemala, El Salvador y Nicaragua."},
 ]
 
 function Section1Services() {
