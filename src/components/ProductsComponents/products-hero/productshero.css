@@ -14,6 +14,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 24px;
     background: var(--main-gradient);
     border-radius: 50px;
     overflow: hidden;
@@ -32,6 +33,7 @@
     justify-content: center;
     gap: 16px;
     height: 90%;
+    padding: 3%;
 }
 .prodhero-title {
     width: fit-content;
@@ -75,7 +77,7 @@
     position: relative;
     color: white;
     width: 600px;
-    height: 90%;
+    height: 100%;
     border-radius: 35px;
     background-repeat: no-repeat;
     background-position: top 70% left 50%;
@@ -119,4 +121,47 @@ div.prodinfo-container div {
     border-radius: 50%;
     background-color: #D5EAFF;
     /* outline: solid 2px whitesmoke; */
+}
+
+@media (max-width: 1000px) {
+    .prod-hero {
+        height: fit-content;
+    }
+    .prodhero-container {
+        padding: 15px;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .prodhero-info-container {
+        position: relative;
+        top: 5%;
+        left: 0;
+        padding: 32px clamp(16px, 50%, calc(3%));
+        width: 100%;
+        height:fit-content;
+    }
+    .prodhero-btn > div {
+        padding: 5px;
+    }
+    .prodhero-img-container {
+        /* margin: 0 16px 16px; */
+        width: 100%;
+        height: 300px;
+        /* width: 100%; */
+        position: relative;
+    }
+    .prodtag {
+        position: absolute;
+        width: clamp(180px, 40%, 250px);
+        height: 50px;
+
+        left: auto;
+        right: 80px;
+        top: -25px;
+        /* left: 5%; */
+    }
+    div .prodinfo-container div{
+        width: 40px;
+        height: 40px;
+    }
 }

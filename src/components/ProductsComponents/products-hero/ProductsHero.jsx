@@ -26,14 +26,14 @@ function ProductsHero() {
                   temporibus vel ex, qui quia, officiis aut?
                 </p>
               </div>
-              <NavLink to="/Contacto" className="flex serhero-btn">
+              <NavLink to="/Contacto" className="flex prodhero-btn">
                 Contactanos
                 <div className="flex">
                   <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
                 </div>
               </NavLink>
             </div>
-            <div className="prodhero-img-container" style={{
+            <div className="flex prodhero-img-container" style={{
               backgroundImage:`url(${productsPic})`}}>
               <div className="flex prodtag">
                 <div className="flex prodinfo-container">

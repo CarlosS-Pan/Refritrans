@@ -1,14 +1,16 @@
 .prod-section1 {
     justify-content: space-between;
-    padding: 7% 0 0 10%;
+    padding: 7% 10% 0 10%;
     height: auto;
     width: 100%;
-    
+
+    gap: 60px;    
 
     /* outline: solid 1px green; */
 }
 .container-info-prod-section1 {
     flex-direction: column;
+    width: 300px;
     gap: 50px;
 }
 .info-prod-section1 > h1 {
@@ -29,10 +31,16 @@
 
     border-radius: 50%;
     border: solid 2px var(--primary-color);
-}
-.prev-btn {
+    cursor: pointer;
 
-    /* background-color: aqua; */
+    transition: background-color 200ms ease-in-out;
+}
+
+.next-btn:hover {
+    filter:brightness(1.15)
+}
+.prev-btn:hover {
+    filter:brightness(0.85)
 }
 .next-btn {
     color: white;
@@ -40,9 +48,12 @@
 }
 
 .wrapper{
+    max-width: 1700px;
+    /* min-width: 250px; */
     position: relative;
-    width: auto;
+    flex: 1;
     height: auto;
+    overflow: hidden;
 }
 .wrapper::before {
     /* content: ''; */
@@ -65,24 +76,23 @@
 .carousel-container {
     /* position: relative; */
     padding: 15px;
-    width: 900px;
+    /* width: 100%; */
     height: auto;
-
     gap: 50px;
 
-    overflow-x: auto;
+    /* overflow-x: hidden; */
 
-    scrollbar-width: none;
     /* outline: dashed 2px red; */
+    transform: translateX(calc(-1 * var(--offset) * (300px + 50px)));
+    transition: transform 0.4s ease-in-out;
 }
-.carousel-container::-webkit-scrollbar {
-    display:none;
-}
+
 .card {
     /* flex: 10 0 0%; */
     flex-direction: column;
-    max-width: 275px;
-    min-width: 355px;
+    flex-shrink: 0;
+    /* max-width: 275px; */
+    width: 300px;
     height: 430px;
 
     border-radius: 10% ;
@@ -125,4 +135,32 @@
 
     border-radius: 50%;
     background-color: #D5EAFF;
+}
+
+@media (max-width: 950px) {
+    .prod-section1 {
+        flex-direction: column;
+        gap: 16px
+    }
+    .container-info-prod-section1 {
+        width: fit-content;
+    }
+    .info-prod-section1 p {
+        max-width: 500px;
+    }
+    .carousel-container {
+        gap: 15px;
+        transform: translateX(calc(-1 * var(--offset) * (300px + 15px)));
+    }
+}
+@media (max-width: 700px) {
+    .card {
+        height: 300px;
+    }
+    .card-media {
+        height: 150px;
+    }
+    .card-header {
+        flex-grow: 1;
+    }
 }
