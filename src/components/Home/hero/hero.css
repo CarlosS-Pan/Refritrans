@@ -75,7 +75,9 @@ div.hero a > div {
 @media (max-width: 600px) {
     .hero-text  {
         max-width: none;
-
+    }
+    .prodhero-img-container {
+        padding-top: 16px;
     }
     
 }
