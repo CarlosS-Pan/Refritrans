@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faMapPin, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { NavLink, useLocation } from "react-router-dom"
 import { Map } from "../index";
-import { useState } from "react"
 
 const details =[
   {icon: <FontAwesomeIcon icon={faPhone}/>, text: "(503) 2263-9398"},

@@ -63,6 +63,7 @@ ul.links li {
     padding-right: 30px;
     color: var(--primary-color);
     display: none;
+    cursor: pointer;
 }
 
 /* a inside ul's with links class */
@@ -93,22 +94,39 @@ ul.links li {
 
 /* #region sidebar */
 .sidebar {
+<<<<<<< HEAD
     display:none;
+=======
+    z-index: 10;
+>>>>>>> 5a59f8b (feat: add functionality and animations to sidebar)
     position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
+    top: 75px;
+    right: -200px;
+    height: calc(100vh - 75px);
     /* max-width: 25%; */
     min-width: 10%;
     /* width: 250px; */
-    z-index: 10;
     border-radius: 20px 0 0 20px;
-    background-color: white;
+    border: solid 1px #D5EAFF;
+    background: linear-gradient( to bottom right, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.1));
+    backdrop-filter: blur(5px);
+
+    transition: right 300ms ease-in-out;
+
+    visibility: hidden;
+    transition: right 300ms ease-in-out, visibility 300ms linear 0s;
+}
+.sidebar-open {
+    /* transform: translate(-200px) ; */
+    right: 0;
+
+    visibility: visible;
 }
 .sidebar > ul {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    gap: 16px;
     width: 200px;
     height: wrap;
     
@@ -163,7 +181,6 @@ ul.links li {
     .burger{
         display:block;
     }
-    .sidebar {
-        /* display: block; */
-    }
+    /* .sidebar {
+    } */
 }

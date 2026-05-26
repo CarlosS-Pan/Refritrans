@@ -2,14 +2,16 @@ import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { LogoComplete } from '../../assets';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons/faCircleArrowRight';
-import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faXmark , faBars} from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 const Navbar = () => {
-
-    // const handleclick =() => {
-         
-    // }
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+    
+    const handleSidebarClick = () =>{
+        setSidebarOpen(!sidebarOpen);
+    }
     
     return (
         <>
@@ -40,13 +42,12 @@ const Navbar = () => {
                     </NavLink>
                 </li>
             </ul>
-            <div className="flex burger">
-                <FontAwesomeIcon icon={faBars} size="lg" />
-
+            <div className="flex burger" onClick={handleSidebarClick}>
+                <FontAwesomeIcon icon={sidebarOpen ? faXmark : faBars} size="lg" />
             </div>
             
         </nav>
-        <nav className='flex sidebar'>
+        <nav className={`flex sidebar ${sidebarOpen ? 'sidebar-open': ''}`}>
             <ul className='flex'>
                 <li className="flex">
                     <NavLink to="/">
@@ -64,7 +65,7 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Contacto" className="flex sidebar-btn">
+                    <NavLink to="/Contacto" className="flex sidebar-btn" >
                         Contacto
                         <FontAwesomeIcon icon={faCircleArrowRight} size="lg" rotateBy className='btn-rotation contact-icon-navbar'/>
                     </NavLink>
