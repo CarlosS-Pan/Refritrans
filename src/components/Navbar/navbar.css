@@ -103,11 +103,7 @@ ul.links li {
     background: transparent;
 }
 .sidebar {
-<<<<<<< HEAD
-    display:none;
-=======
     z-index: 10;
->>>>>>> 5a59f8b (feat: add functionality and animations to sidebar)
     position: fixed;
     top: 75px;
     right: -200px;
