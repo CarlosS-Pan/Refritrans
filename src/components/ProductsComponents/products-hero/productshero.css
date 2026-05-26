@@ -128,6 +128,7 @@ div.prodinfo-container div {
 @media (max-width: 1000px) {
     .prod-hero {
         height: fit-content;
+        padding: 85px 20px 9px;
     }
     .prodhero-container {
         padding: 15px;
@@ -158,9 +159,8 @@ div.prodinfo-container div {
         height: 50px;
 
         left: auto;
-        right: 80px;
-        top: -25px;
-        /* left: 5%; */
+        right: 10px;
+        bottom: -10px;
     }
     div .prodinfo-container div{
         width: 40px;

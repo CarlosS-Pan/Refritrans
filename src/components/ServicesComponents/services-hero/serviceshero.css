@@ -129,6 +129,7 @@ div.serinfo-container div {
 @media (max-width: 1000px) {
     .ser-hero {
         height: fit-content;
+        padding: 85px 20px 9px;
     }
     .serhero-container {
         padding: 15px;
@@ -157,8 +158,8 @@ div.serinfo-container div {
         height: 50px;
 
         left: auto;
-        right: 80px;
-        top: -25px;
+        right: 10px;
+        bottom: -10px;
     }
     div .serinfo-container div {
         width: 40px;

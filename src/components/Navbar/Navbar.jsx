@@ -4,7 +4,7 @@ import { LogoComplete } from '../../assets';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons/faCircleArrowRight';
 import { faXmark , faBars} from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -13,6 +13,21 @@ const Navbar = () => {
         setSidebarOpen(!sidebarOpen);
     }
     
+    const closeSidebar = () => {
+        setSidebarOpen(false);
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', closeSidebar);
+        window.addEventListener('touchmove', closeSidebar)
+        
+        return () => {
+        window.removeEventListener('scroll', closeSidebar);
+        window.removeEventListener('touchmove', closeSidebar)
+
+        }
+  }, []);
+
     return (
         <>
         <nav className="flex navbar">
@@ -47,6 +62,11 @@ const Navbar = () => {
             </div>
             
         </nav>
+
+        {sidebarOpen && (
+            <div className="overlay" onClick={closeSidebar}></div>
+        )}
+
         <nav className={`flex sidebar ${sidebarOpen ? 'sidebar-open': ''}`}>
             <ul className='flex'>
                 <li className="flex">

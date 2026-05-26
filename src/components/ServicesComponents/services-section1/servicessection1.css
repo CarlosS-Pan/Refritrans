@@ -94,10 +94,10 @@
     /* border: solid green; */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .S1container {
         flex-direction: column;
-        padding: 5% 10%;
+        padding: 5% 20px;
     }
     .S1info {
         min-width: clamp(250px, 100%, calc(100%));

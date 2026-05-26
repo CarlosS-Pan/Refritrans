@@ -98,3 +98,9 @@
     width: 400px;
 
 }
+
+@media (max-width: 1000px) {
+    .section2 {
+        padding: 0 20px 10%;
+    }
+}

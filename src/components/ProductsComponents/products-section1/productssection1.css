@@ -140,7 +140,8 @@
 @media (max-width: 950px) {
     .prod-section1 {
         flex-direction: column;
-        gap: 16px
+        gap: 16px;
+        padding: 7% 20px 7%;
     }
     .container-info-prod-section1 {
         width: fit-content;

@@ -93,6 +93,15 @@ ul.links li {
 /* #endregion */
 
 /* #region sidebar */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: transparent;
+}
 .sidebar {
 <<<<<<< HEAD
     display:none;
