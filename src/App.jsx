@@ -7,6 +7,19 @@ import { Navbar, Footer} from "./components";
 // pages
 import { Home, Services, Products} from "./pages";
 
+import { useEffect } from 'react';
+
+const ScrollToTop = () => {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
 
   const location = useLocation();
@@ -19,6 +32,7 @@ function App() {
 
   return (
     <div className={pageClass}>
+      <ScrollToTop />
       <Navbar />
       <Routes>
 
