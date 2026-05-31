@@ -20,3 +20,6 @@ export { default as ServicesSection2 } from "./ServicesComponents/services-secti
 // footer
 export { default as Footer } from "./Footer/Footer";
 export { default as Map } from "./Footer/Map";
+
+// contact page
+export { default as ContactSection1 } from "./ContactComponents/contact-section1/ContactSection1";

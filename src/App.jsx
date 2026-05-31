@@ -5,7 +5,7 @@ import { Routes, Route, useLocation } from "react-router-dom"
 import { Navbar, Footer} from "./components";
 
 // pages
-import { Home, Services, Products} from "./pages";
+import { Home, Services, Products, Contact} from "./pages";
 
 import { useEffect } from 'react';
 
@@ -28,6 +28,7 @@ function App() {
     "/": "page-home",
     "/Servicios": "page-services",
     "/Productos": "page-products",
+    "/Contacto": "page-contact",
   }[location.pathname] || "page-home"
 
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/Servicios" element={<Services />}/>
         <Route path="/Productos" element={<Products />}/>
+        <Route path="/Contacto" element={<Contact />}/>
 
       </Routes>
       <Footer/>

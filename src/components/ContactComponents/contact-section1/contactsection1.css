@@ -1,0 +1,28 @@
+.contact-wrapper {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+.csection1 {
+    height: 500px;
+    width: 70%;
+
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 30px;
+    border: solid 1px #D5EAFF;
+    background-image: linear-gradient(
+        to left, 
+        rgb(19, 57, 149,0.2),
+        rgb(213, 234, 255, 0.15));
+    backdrop-filter: blur(5px);
+
+    overflow-x: clip;
+}
