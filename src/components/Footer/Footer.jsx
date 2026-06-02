@@ -17,7 +17,9 @@ const Footer = () => {
 
   const location = useLocation();
 
-  const isWhiteBg = location.pathname === "/";
+  const isWhiteBg = 
+    location.pathname === "/" ||
+    location.pathname === "/Contacto";
 
   const logo = isWhiteBg ? LogoComplete : LogoCompleteWhite;
 
