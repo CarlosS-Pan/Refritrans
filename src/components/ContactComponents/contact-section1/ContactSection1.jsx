@@ -4,11 +4,9 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-
-
 const ContactSection1 = ({footerRef}) => {
+
   const [result, setResult] = useState("");
-      console.log("footerRef:", footerRef)
 
   const onSubmit = async(event) => {
     event.preventDefault();

@@ -1,8 +1,11 @@
 .contact-wrapper {
+    position: relative;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 
     padding: 20px;
     padding-top: 85px;
@@ -150,6 +153,41 @@ label {
     2s ease-in-out infinite bounce;
 }
 
+@media (max-width: 800px) {
+    .contact-wrapper {
+        height: 100%;
+        padding: 200px 0 100px;
+    }
+    .csection {
+        width: clamp(350px, 70%, calc(100%));
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    .csnowflake1 {
+        height: 20%;
+    }
+    .csnowflake2 {
+        top: 300px;
+    }
+    .csnowflake3 {
+        left: 200px;
+    }
+    .csnowflake4 {
+        left: 250px;
+    }
+}
+@media (max-height: 1000px ){
+    .contact-wrapper {
+        padding: 200px 0 100px;
+        height: wrap;
+        min-height: 800px;
+    }
+    .csection-title {
+        top: -60px;
+    }
+}
 @keyframes bounce {
     0% {
         transform: translateY(0);
