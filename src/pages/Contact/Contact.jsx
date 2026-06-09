@@ -1,8 +1,8 @@
 import { ContactSection1 } from '../../components/'
 
-const Contact = () => {
+const Contact = ({footerRef}) => {
   return (
-    <ContactSection1 />
+    <ContactSection1 footerRef={footerRef}/>
   )
 }
 

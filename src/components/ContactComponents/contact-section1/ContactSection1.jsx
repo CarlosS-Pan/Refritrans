@@ -1,11 +1,14 @@
 import "./contactsection1.css";
 import { Snowflake } from "../../../assets/index"
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
 
-const ContactSection1 = () => {
+const ContactSection1 = ({footerRef}) => {
   const [result, setResult] = useState("");
+      console.log("footerRef:", footerRef)
 
   const onSubmit = async(event) => {
     event.preventDefault();
@@ -53,6 +56,10 @@ const ContactSection1 = () => {
 
           <div className="form-row">
             <div className="interes">
+              <label>
+                en busca de: 
+              </label>
+
               <label htmlFor="repuestos">
                 <input type="radio" name="Interes" id="repuestos" value="repuestos"/>
               repuestos
@@ -60,6 +67,10 @@ const ContactSection1 = () => {
               <label htmlFor="servicios">
                 <input type="radio" name="Interes" id="servicios" value="servicios"/>
               servicios
+              </label>
+              <label htmlFor="informacion">
+                <input type="radio" name="Interes" id="informacion" value="informacion"/>
+              informacion
               </label>
               
             </div>
@@ -93,6 +104,14 @@ const ContactSection1 = () => {
           <p>{result}</p>
         </form>
       </section>
+      <button className="more-info" onClick={() => {
+        footerRef.current?.scrollIntoView({
+          behavior: 'smooth'
+        })
+      }}>
+        <FontAwesomeIcon icon={faArrowRight} size="lg" rotateBy style={{'transform': 'rotate(90deg)'}}/>
+      </button>
+      
     </div>
   )
 }

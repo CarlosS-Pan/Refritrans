@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faMapPin, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { NavLink, useLocation } from "react-router-dom"
 import { Map } from "../index";
+import { forwardRef } from "react"
+
 
 const details =[
   {icon: <FontAwesomeIcon icon={faPhone}/>, text: "(503) 2263-9398"},
@@ -13,7 +15,7 @@ const details =[
 
 
 
-const Footer = () => {
+const Footer = forwardRef((props,footerRef) => {
 
   const location = useLocation();
 
@@ -24,7 +26,7 @@ const Footer = () => {
   const logo = isWhiteBg ? LogoComplete : LogoCompleteWhite;
 
     return (
-      <div className="flex footer-container">
+      <div ref={footerRef} className="flex footer-container">
             <div className="flex top-footer">
               <div className="flex info-footer">
                 <img id="footer-logo" src={logo} alt="Refritrans El Salvador"/>
@@ -75,6 +77,6 @@ const Footer = () => {
             </div>
       </div>
     )
-}
+})
 
 export default Footer

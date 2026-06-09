@@ -7,7 +7,8 @@ import { Navbar, Footer} from "./components";
 // pages
 import { Home, Services, Products, Contact} from "./pages";
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+
 
 const ScrollToTop = () => {
 
@@ -22,6 +23,7 @@ const ScrollToTop = () => {
 
 function App() {
 
+  const footerRef = useRef(null);
   const location = useLocation();
 
   const pageClass = {
@@ -40,10 +42,10 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/Servicios" element={<Services />}/>
         <Route path="/Productos" element={<Products />}/>
-        <Route path="/Contacto" element={<Contact />}/>
+        <Route path="/Contacto" element={<Contact footerRef={footerRef}/>}/>
 
       </Routes>
-      <Footer/>
+      <Footer ref={footerRef}/>
     </div>
   )
 }
