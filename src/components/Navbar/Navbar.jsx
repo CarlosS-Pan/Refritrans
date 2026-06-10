@@ -26,7 +26,7 @@ const Navbar = () => {
         window.removeEventListener('touchmove', closeSidebar)
 
         }
-  }, []);
+    }, []);
 
     return (
         <>

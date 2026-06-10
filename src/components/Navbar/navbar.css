@@ -54,9 +54,27 @@ ul.links li {
     align-items: center;
 }
 .link {
+    position: relative;
+    width: max-content;
     margin: 0 50px 0 0;
     /* outline: dotted green; */
-    
+}
+.link::after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 4px;
+    opacity: 0%;
+    background-color: var(--primary-color);
+    bottom: 8px;
+    left: calc(80%);
+    transition: all 200ms ease-out;
+}
+.link:hover::after {
+    content: '';
+    opacity: 100%;
+    left: 0;
+    /* right: calc(0%); */
 }
 .burger{
     
