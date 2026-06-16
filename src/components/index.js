@@ -23,3 +23,7 @@ export { default as Map } from "./Footer/Map";
 
 // contact page
 export { default as ContactSection1 } from "./ContactComponents/contact-section1/ContactSection1";
+
+// hooks
+export { default as useAnimateOnScroll } from "./Hooks/useAnimateOnScroll";
+export { default as useAnimateListOnScroll } from "./Hooks/useAnimateListOnScroll";

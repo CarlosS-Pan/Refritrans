@@ -7,8 +7,8 @@ function Home() {
       <Hero />
       <About />
       <div className="flex bg-yoe-hs">
-          <YOE />
-          <HomeServices />
+        <YOE />
+        <HomeServices />
       </div>
     </>
   )

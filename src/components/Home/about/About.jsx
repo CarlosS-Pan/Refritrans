@@ -1,39 +1,17 @@
 import './about.css'
 import { AboutSupra, Snowflake } from '../../../assets';
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
+import { useAnimateOnScroll, useAnimateListOnScroll } from '../../index';
 
 const About = () => {
-    const liRefs = useRef([]);
-    const imgRef = useRef(null);
+    const liRefs = useAnimateListOnScroll();
+    const imgRef = useAnimateOnScroll();
 
     const numdata = [
         {id: 1, num: "1000+", description: "Lorem ipsum doloasdasdasda asdasdasd asdasdasd asdasdasd ar sit amet"},
         {id: 2, num: "2000+", description: "Loremasdasdasd asdasdasd asd  ipsum dolor sit amet"},
         {id: 3, num: "3000+", description: "Lorem ipsum dolor sit amet"},
     ];
-
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.5,
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible")
-                };
-            });
-        }, options);
-            
-        liRefs.current.forEach((el) => {
-            if (el) observer.observe(el);
-        });
-        if (imgRef.current) observer.observe(imgRef.current);
-        
-        return () => observer.disconnect();        
-    },[]);
 
     return (
         <>
