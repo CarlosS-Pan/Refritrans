@@ -4,12 +4,12 @@ import "./home.css"
 function Home() {
   return (
     <>
-        <Hero />
-        <About />
-        <div className="flex bg-yoe-hs">
-            <YOE />
-            <HomeServices />
-        </div>
+      <Hero />
+      <About />
+      <div className="flex bg-yoe-hs">
+          <YOE />
+          <HomeServices />
+      </div>
     </>
   )
 }

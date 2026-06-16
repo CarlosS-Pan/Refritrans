@@ -22,14 +22,14 @@ function ProductsSection1() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const handlePreviousClick = () => {
-    console.log("current:" + currentImageIndex)
+    // console.log("current:" + currentImageIndex)
     setCurrentImageIndex(
       currentImageIndex === 0 ? cards.length - 1: currentImageIndex - 1
     );
   };
 
   const handleNextClick = () => {  
-    console.log("current: " + currentImageIndex)
+    // console.log("current: " + currentImageIndex)
     setCurrentImageIndex((currentImageIndex + 1) % cards.length)
   }
 

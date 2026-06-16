@@ -3,9 +3,9 @@ import { ServicesHero, ServicesSection1, ServicesSection2 } from "../../componen
 function Services() {
   return (
     <>
-        <ServicesHero/>
-        <ServicesSection1/>
-        <ServicesSection2/>
+      <ServicesHero/>
+      <ServicesSection1/>
+      <ServicesSection2/>
     </>
   )
 }
