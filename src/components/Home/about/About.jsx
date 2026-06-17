@@ -26,8 +26,8 @@ const About = () => {
                 <ul className="flex data">
                     {numdata.map(({id, num, description}, i) => (
                         <li key={id} ref={(el) => (liRefs.current[i] = el)} className="data-item">
-                            <h2 className="animate-text delay-1">{num}</h2>
-                            <div className="description-about animate-text delay-2">{description}</div>
+                            <h2 className="animate-text delayLi-1">{num}</h2>
+                            <div className="description-about animate-text delayLi-2">{description}</div>
                         </li>
                     ))}
                 </ul>

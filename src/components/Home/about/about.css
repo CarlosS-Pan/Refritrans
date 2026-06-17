@@ -63,16 +63,6 @@
     max-width: 800px;
     height: auto; 
 }
-.animate-x {
-    opacity: 0;
-    transform: translateX(20px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-.animate-x.visible {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: 300ms;
-}
 
 .data{
     color: #001B69;
@@ -109,13 +99,13 @@ ul.data h2 {
 }
 
 /* when li is visible, trigger children */
-.data-item.visible .delay-1 {
+.data-item.visible .delayLi-1 {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 200ms;  /* h2 comes in at 200ms */
 }
 
-.data-item.visible .delay-2 {
+.data-item.visible .delayLi-2 {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 700ms;  /* div comes in at 300ms */
