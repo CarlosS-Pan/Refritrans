@@ -75,8 +75,8 @@ function Yoe() {
               </div>
             </div>
           </div>
-          <NavLink to="/Productos" className="flex">
-            Ver productos
+          <NavLink to="/Productos" className="flex white-btn">
+            <p>Ver productos</p>
             <div className="flex">
               <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
             </div>

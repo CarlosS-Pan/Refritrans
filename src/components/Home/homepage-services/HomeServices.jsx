@@ -19,8 +19,8 @@ const HomeServices = () => {
                 consequatur ea voluptatem corporis veniam 
                 distinctio placeat vel.
             </p>
-            <NavLink to="/servicios" className="flex serv-btn">
-                Ver servicios
+            <NavLink to="/servicios" className="flex white-btn">
+                <p>Ver servicios</p>
                 <div className="flex ">
                     <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color: "white"}}/>
                 </div>

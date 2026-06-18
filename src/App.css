@@ -15,12 +15,141 @@
 }
 .animate-y.visible {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
 }
 
-.delay-3 {
+.delay-300 {
     transition-delay: 300ms;
 } 
-.delay-7 {
+.delay-700 {
     transition-delay: 700ms;
 } 
+
+
+/* BUTTONS */
+.btn-rotation {
+    rotate: -45deg;
+}
+.blue-btn {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    padding: 10px 10px;
+    width:fit-content;
+    white-space: nowrap;
+    
+    background-color: var(--primary-color);
+    border-radius: 50px;
+
+    border: solid 2px var(--primary-color);
+}
+.blue-btn > div {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 50%;
+    background: white;
+}
+
+.white-btn {
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    padding: 10px 10px;
+    width:fit-content;
+    white-space: nowrap;
+    
+    background-color: white;
+    border-radius: 50px;
+
+    border: solid 2px white;
+}
+.white-btn > div {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.white-btn,
+.blue-btn {
+    overflow: hidden;
+}
+a div{
+    position: relative;
+}
+.white-btn:hover div::before {
+    scale: 30;
+}
+.blue-btn:hover div::before {
+    scale: 30;
+}
+
+.white-btn div::before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    transition: 400ms ease-out;
+}
+.blue-btn div::before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    
+    transition: 400ms ease-out;
+}
+
+.white-btn p,
+.white-btn svg {
+    position: relative;
+    z-index: 1;
+}
+.blue-btn p,
+.blue-btn svg {
+    position: relative;
+    z-index: 1;
+}
+
+.white-btn:hover {
+    color: white;
+}
+.blue-btn:hover {
+    color: var(--primary-color);
+}
+
+.white-btn:hover div {
+    transform: rotate(45deg);
+}
+.blue-btn:hover div {
+    transform: rotate(45deg);
+}
+
+.white-btn div,
+.white-btn p{
+    transition: 200ms ease-out;
+}
+.blue-btn div,
+.blue-btn p{
+    transition: 200ms ease-out;
+}

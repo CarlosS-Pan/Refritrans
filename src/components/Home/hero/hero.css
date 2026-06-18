@@ -37,31 +37,8 @@
 .hero-text p {
     padding-bottom: 16px;
 }
-div.hero a {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 10px;
-    padding: 10px 10px;
-    width:fit-content;
-    white-space: nowrap;
-    
-    background-color: var(--primary-color);
-    border-radius: 50px;
-    border-color:transparent;
-    /* outline: thick solid pink; */
-}
-div.hero a > div {
-    justify-content: center;
-    align-items: center;
-    
-    /* height: 40px; */
-    /* width: 40px; */
-    padding: 10px;
-
-    border-radius: 50%;
-    background: white;
+.hero-text .blue-btn p {
+    padding-bottom: 0;
 }
 .contact-icon-hero {
     margin-right: 5px;

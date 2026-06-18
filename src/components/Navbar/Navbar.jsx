@@ -1,8 +1,7 @@
 import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { LogoComplete } from '../../assets';
-import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons/faCircleArrowRight';
-import { faXmark , faBars} from '@fortawesome/free-solid-svg-icons';
+import { faXmark , faBars, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect} from 'react';
 
@@ -51,9 +50,11 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Contacto" className="flex navbar-btn">
-                        Contacto
-                        <FontAwesomeIcon icon={faCircleArrowRight} size="lg" rotateBy className='btn-rotation contact-icon-navbar'/>
+                    <NavLink to="/Contacto" className="flex blue-btn">
+                        <p>Contacto</p>
+                        <div className="flex">
+                            <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"var(--primary-color)"}}/>
+                        </div>
                     </NavLink>
                 </li>
             </ul>
@@ -86,8 +87,8 @@ const Navbar = () => {
                 </li>
                 <li>
                     <NavLink to="/Contacto" className="flex sidebar-btn" >
-                        Contacto
-                        <FontAwesomeIcon icon={faCircleArrowRight} size="lg" rotateBy className='btn-rotation contact-icon-navbar'/>
+                        <p>Contacto</p>
+                        <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"var(--primary-color)"}}/>
                     </NavLink>
                 </li>
             </ul>

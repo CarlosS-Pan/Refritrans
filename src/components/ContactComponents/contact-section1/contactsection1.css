@@ -130,7 +130,7 @@ label {
 
 	/* background: linear-gradient( 135deg, rgba(94, 231, 223, 0.5) 0%, rgba(59, 130, 246, 0.5) 100% );
 	border: 1px solid rgba(94, 231, 223, 0.45);*/
-	box-shadow: 0 4px 24px rgba(0, 47, 255, 0.3), inset 0 1px 1px rgba(153, 255, 0, 0.45), inset 0 -1px 1px rgba(255, 0, 0, 0.1);
+	box-shadow: 0 2px 16px rgb(255, 255, 255);
 }
 
 
@@ -151,6 +151,10 @@ label {
 
     animation: 
     2s ease-in-out infinite bounce;
+    transition: 100ms ease-in-out;
+}
+.more-info:hover {
+    scale: 1.05;
 }
 
 @media (max-width: 800px) {

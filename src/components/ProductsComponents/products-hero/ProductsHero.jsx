@@ -26,8 +26,8 @@ function ProductsHero() {
                   temporibus vel ex, qui quia, officiis aut?
                 </p>
               </div>
-              <NavLink to="/Contacto" className="flex prodhero-btn">
-                Contactanos
+              <NavLink to="/Contacto" className="flex white-btn">
+                <p>Contactanos</p>
                 <div className="flex">
                   <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
                 </div>

@@ -48,32 +48,6 @@
     width: fit-content;
     /* outline: dotted 2px green; */
 }
-.serhero-btn {
-    color: var(--primary-color);
-    justify-content: center;
-    align-items: center;
-    
-    gap: 10px;
-    padding: 10px 10px;
-    width:fit-content;
-    white-space: nowrap;
-    
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    border-color:transparent;
-    /* outline: thick solid pink; */
-}
-.serhero-btn > div {
-    justify-content: center;
-    align-items: center;
-    
-    /* height: 40px; */
-    /* width: 40px; */
-    padding: 10px;
-
-    border-radius: 50%;
-    background: var(--primary-color);
-}
 
 .serhero-img-container {
     position: relative;

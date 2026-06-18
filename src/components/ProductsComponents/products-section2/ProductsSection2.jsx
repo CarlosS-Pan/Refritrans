@@ -17,8 +17,8 @@ function ProductsSection2() {
             Lorem ipsum dolor sit amet,
             consectetur adipiscing elit.
           </p>
-          <NavLink to="/Contacto" className="flex sersection2-btn">
-            Contactanos
+          <NavLink to="/Contacto" className="flex white-btn">
+            <p>Contactanos</p>
             <div className="flex">
               <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
             </div>

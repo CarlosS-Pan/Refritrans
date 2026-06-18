@@ -41,35 +41,12 @@
     font-size: larger;
     padding: 16px;
 }
-.sersection2-btn {
-    /* z-index: 1; */
-
-    color: var(--primary-color);
-    justify-content: center;
-    align-items: center;
-    
-    gap: 10px;
-    padding: 10px 10px;
+.section2-container .white-btn {
     margin: 3rem 0 4rem;
-    width:fit-content;
-    white-space: nowrap;
-    
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    border-color:transparent;
-    /* outline: thick solid pink; */
-
 }
-.sersection2-btn > div {
-    justify-content: center;
-    align-items: center;
-    
-    /* height: 40px; */
-    /* width: 40px; */
-    padding: 10px;
-
-    border-radius: 50%;
-    background: var(--primary-color);
+.section2-container .white-btn p{
+    font-size: medium;
+    padding: 0;
 }
 
 .dual-container {

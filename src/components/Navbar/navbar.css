@@ -29,9 +29,6 @@
     /* outline: dotted red; */
 
 }
-/* a.logo img {
-    width: 70%;
-} */
 
 /* #region navbar links */
 .links {
@@ -52,6 +49,16 @@ ul.links li {
     /* background-color: red; */
     justify-content: center;
     align-items: center;
+}
+.navbar .blue-btn {
+    padding: 5px 10px;
+}
+.navbar a > div {
+    padding: 7px;
+}
+.navbar a > div::before {
+    top: 5px;
+    right: 5px;
 }
 .link {
     position: relative;
@@ -82,31 +89,6 @@ ul.links li {
     color: var(--primary-color);
     display: none;
     cursor: pointer;
-}
-
-/* a inside ul's with links class */
-.navbar-btn{
-    z-index: 1000;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
-
-    padding: 10px 15px;
-    width:fit-content;
-    white-space: nowrap;
-    
-    background-color: #133995;
-    border-radius: 50px;
-    border-color:transparent;
-
-    /* outline: thick solid pink; */
-}
-
-.btn-rotation {
-    --fa-rotate-angle: -45deg;
-}
-.contact-icon-navbar {
-    margin-left: 5px;
 }
 /* #endregion */
 
