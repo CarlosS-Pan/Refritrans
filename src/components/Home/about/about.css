@@ -8,7 +8,7 @@
 }
 .about-text {
     flex-direction: column;
-    max-width: 580px;
+    max-width: clamp(580px, 80%, 2000px);
 
     margin: 0 16px;
 }
