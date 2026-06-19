@@ -3,18 +3,22 @@ import { Ice, grid1, grid2, grid4, bgsnowflakes } from "../../../assets/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCheck, faCircleArrowRight, faTemperatureLow } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
+import { useAnimateOnScroll } from '../../index';
+import { useRef } from 'react';
+
 
 
 function CheckList({children}) {
+  const checklist1Ref = useAnimateOnScroll();
   return(
-    <li className="check-item">
+    <li ref={checklist1Ref} className="check-item animate-x delay-300">
     <FontAwesomeIcon icon={faCheck} style={{color: 'var(--primary-color)'}} size='lg'/>
     {children}
   </li>
   );
 }
 
-function Yoe() {
+const Yoe = () => {
   return (
     <div className='flex yoe'>
       <div className="ice">

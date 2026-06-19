@@ -1,11 +1,12 @@
 import "./contactsection1.css";
 import { Snowflake } from "../../../assets/index"
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useAnimateOnScroll } from "../../index";
 
 const ContactSection1 = ({footerRef}) => {
-
+  const formRef = useAnimateOnScroll();
   const [result, setResult] = useState("");
 
   const onSubmit = async(event) => {
@@ -27,7 +28,8 @@ const ContactSection1 = ({footerRef}) => {
       {[1,2,3,4].map((i) => (
         <img key={i} src={Snowflake} className={`csnowflake${i}`} alt="snowflake" />
       ))}
-      <section className="flex csection">
+
+      <section ref={ formRef } className="flex csection animate-y ">
         <div className="csection-title">
           <h1>
           Ponte en Contacto
@@ -98,10 +100,11 @@ const ContactSection1 = ({footerRef}) => {
             <textarea id="message" name="Mensaje" className="text-area" placeholder="Write something..."/> 
           </div>
 
-          <button className="form-btn" type="submit">submit form</button>
+          <button className="form-btn" type="submit"> Enviar</button>
           <p>{result}</p>
         </form>
       </section>
+
       <button className="more-info" onClick={() => {
         footerRef.current?.scrollIntoView({
           behavior: 'smooth'

@@ -3,8 +3,11 @@ import { servicesPic, Snowflake } from "../../../assets/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import { useAnimateOnScroll } from "../../index";
+import { useRef } from "react";
 
 const HomeServices = () => {
+    const homePicRef = useAnimateOnScroll(0.3);  
   return (
     <div className="flex hservices">
         <div className="flex hs-description">
@@ -28,8 +31,7 @@ const HomeServices = () => {
         </div>
         <div className="flex services-container">
             <div className="flex services-pic" >
-                <div style={{backgroundImage: `url(${servicesPic})`}}>
-                    
+                <div ref={homePicRef} className="animate-x delay-300" style={{backgroundImage: `url(${servicesPic})`}}>
                 </div>
             </div>
             <div className="services-grid">

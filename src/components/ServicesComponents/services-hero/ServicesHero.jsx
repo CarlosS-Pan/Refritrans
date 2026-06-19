@@ -4,21 +4,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSnowflake } from "@fortawesome/free-regular-svg-icons"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { NavLink } from 'react-router-dom';
-
+import { useAnimateOnScroll } from "../../index";
 
 function ServicesHero() {
+  const h1ServicesHeroRef = useAnimateOnScroll()
+  const pServicesHeroRef = useAnimateOnScroll()
+
   return (
     <div className="flex ser-hero">
         <div className="flex serhero-container">
           <img src={Snowflake} alt=""/>
           <div className="flex serhero-info-container">
             <div className="serhero-title">
-              <h1>
+              <h1 ref={ h1ServicesHeroRef } className="animate-y delay-300">
                 Cuidado Integral para tus Sistemas de Refrigeracion en Ruta
               </h1>
             </div>
             <div className="serhero-info">
-              <p>
+              <p ref={ pServicesHeroRef } className="animate-x delay-700">
                 Lorem ipsum dolor sit amet 
                 consectetur adipisicing elit. 
                 Molestias non fugit autem deserunt 

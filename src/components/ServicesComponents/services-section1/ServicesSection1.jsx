@@ -2,18 +2,19 @@ import "./servicessection1.css"
 import { servicesSection1 } from "../../../assets/index"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faIcicles, faMicrochip, faRoad, faTemperatureLow, faToolbox, faTruck } from "@fortawesome/free-solid-svg-icons"
-
+import { useAnimateListOnScroll } from "../../index";
 
 const bullets = [
-  { icon: <FontAwesomeIcon icon={faToolbox} size="md" /> , text:"Mantenimiento y reparación para equipos de refrigeración en transporte."},
-  { icon: <FontAwesomeIcon icon={faIcicles} size="md" />, text:"Mantenimiento y reparación de cuartos fríos."},
-  { icon: <FontAwesomeIcon icon={faTemperatureLow} size="md" />, text:"Monitoreo de temperatura por GPS y controles de mantenimiento."},
-  { icon: <FontAwesomeIcon icon={faMicrochip} size="md" />, text:"Servicio de GPS."},
-  { icon: <FontAwesomeIcon icon={faTruck} size="md" />, text:"Administración de mantenimiento para vehículos de transporte."},
-  { icon: <FontAwesomeIcon icon={faRoad} size="md" />, text:"Asistencia en carretera con alcance en Honduras, Guatemala, El Salvador y Nicaragua."},
+  { id:1, icon: <FontAwesomeIcon icon={faToolbox} size="md" /> , text:"Mantenimiento y reparación para equipos de refrigeración en transporte."},
+  { id:2, icon: <FontAwesomeIcon icon={faIcicles} size="md" />, text:"Mantenimiento y reparación de cuartos fríos."},
+  { id:3, icon: <FontAwesomeIcon icon={faTemperatureLow} size="md" />, text:"Monitoreo de temperatura por GPS y controles de mantenimiento."},
+  { id:4, icon: <FontAwesomeIcon icon={faMicrochip} size="md" />, text:"Servicio de GPS."},
+  { id:5, icon: <FontAwesomeIcon icon={faTruck} size="md" />, text:"Administración de mantenimiento para vehículos de transporte."},
+  { id:6, icon: <FontAwesomeIcon icon={faRoad} size="md" />, text:"Asistencia en carretera con alcance en Honduras, Guatemala, El Salvador y Nicaragua."},
 ]
 
 function Section1Services() {
+  const liServicesRef = useAnimateListOnScroll();
   return (
     <div className="flex S1container">
       <div className="flex S1info">
@@ -24,10 +25,10 @@ function Section1Services() {
           amet consectetur adipisicing elit.
         </p>
         <ul className="flex bullets-container">
-          {bullets.map((bullet,i) => (
-            <li key={i} className="flex bullet-point">
-              <div className="flex bullet-icon">{bullet.icon}</div>
-              <div className="flex bullet-info">{bullet.text}</div>
+          {bullets.map(({id,icon, text},i) => (
+            <li key={id} ref={(el => (liServicesRef.current[i] = el))} className="flex bullet-point animate-x delay-300">
+              <div className="flex bullet-icon">{icon}</div>
+              <div className="flex bullet-info">{text}</div>
             </li>
           ))}
 
