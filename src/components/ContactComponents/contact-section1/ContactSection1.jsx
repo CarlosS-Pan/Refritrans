@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useAnimateOnScroll } from "../../index";
+import { NavLink } from "react-router-dom";
+
 
 const ContactSection1 = ({footerRef}) => {
   const formRef = useAnimateOnScroll();
@@ -39,19 +41,19 @@ const ContactSection1 = ({footerRef}) => {
           <div className="form-row">    
 
             <div>
-              <label htmlFor="fname">Nombre:</label>
-                <input type="text" name="Nombre" id="fname" className="glass-input"/>
+              <label htmlFor="fname">Nombre: <span className="req">*</span></label>
+              <input type="text" name="Nombre" id="fname" className="glass-input" required/>
             </div>
 
             <div>
-              <label htmlFor="lname">Apellido:</label>
-              <input type="text" name="Apellido" id="lname" className="glass-input"/>
+              <label htmlFor="lname">Apellido: <span className="req">*</span></label>
+              <input type="text" name="Apellido" id="lname" className="glass-input" required/>
             </div>
           </div>
 
           <div className="form-row-full">
-            <label htmlFor="email">email:</label>
-            <input type="email" name="Email" id="email" className="glass-input"/>
+            <label htmlFor="email">email: <span className="req">*</span></label>
+            <input type="email" name="Email" id="email" className="glass-input" required/>
           </div>
 
           <div className="form-row">
@@ -79,6 +81,7 @@ const ContactSection1 = ({footerRef}) => {
               <label>
                 <input type="checkbox" name="Prefiere" value="Email"/>
               Email
+              {/* <span className="req">*</span> */}
               </label>
               
 
@@ -96,11 +99,16 @@ const ContactSection1 = ({footerRef}) => {
             </div>
           </div>
           <div className="form-row-full">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="Mensaje" className="text-area" placeholder="Write something..."/> 
+            <label htmlFor="message">Message <span className="req">*</span></label>
+            <textarea id="message" name="Mensaje" className="text-area" placeholder="Escribe algo..." required/> 
           </div>
 
-          <button className="form-btn" type="submit"> Enviar</button>
+          <button className="flex white-btn" type="submit">
+            <p>Contactanos</p>
+            <div className="flex">
+              <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
+            </div>
+          </button>
           <p>{result}</p>
         </form>
       </section>
