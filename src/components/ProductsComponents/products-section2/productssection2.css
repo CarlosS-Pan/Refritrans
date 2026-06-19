@@ -3,7 +3,7 @@
     align-items: center;
     width: 100%;
     height: fit-content;
-    padding: 0 10% 10%;
+    padding: 70px 10% 10%;
 
     /* outline: solid red; */
 }
@@ -78,6 +78,6 @@
 
 @media (max-width: 1000px) {
     .section2 {
-        padding: 0 20px 10%;
+        padding: 50px 20px 10%;
     }
 }
