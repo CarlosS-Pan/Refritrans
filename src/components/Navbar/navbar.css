@@ -66,6 +66,10 @@ ul.links li {
     margin: 0 50px 0 0;
     /* outline: dotted green; */
 }
+.navbar .link a {
+    padding: 20px 10px;
+}
+
 .link::after {
     position: absolute;
     content: '';
@@ -80,7 +84,7 @@ ul.links li {
 .link:hover::after {
     content: '';
     opacity: 100%;
-    left: 0;
+    left: 10px;
     /* right: calc(0%); */
 }
 .burger{
