@@ -72,6 +72,7 @@ ul.links li {
 
 .link::after {
     position: absolute;
+    z-index: -1;
     content: '';
     width: 18px;
     height: 4px;
