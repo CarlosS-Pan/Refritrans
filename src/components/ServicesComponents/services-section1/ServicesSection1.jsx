@@ -2,7 +2,7 @@ import "./servicessection1.css"
 import { servicesSection1 } from "../../../assets/index"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faIcicles, faMicrochip, faRoad, faTemperatureLow, faToolbox, faTruck } from "@fortawesome/free-solid-svg-icons"
-import { useAnimateListOnScroll } from "../../index";
+import { useAnimateListOnScroll, useAnimateOnScroll } from "../../index";
 
 const bullets = [
   { id:1, icon: <FontAwesomeIcon icon={faToolbox} size="md" /> , text:"Mantenimiento y reparación para equipos de refrigeración en transporte."},
@@ -15,6 +15,8 @@ const bullets = [
 
 function Section1Services() {
   const liServicesRef = useAnimateListOnScroll();
+  const picRef = useAnimateOnScroll(0.1)
+
   return (
     <div className="flex S1container">
       <div className="flex S1info">
@@ -33,7 +35,7 @@ function Section1Services() {
 
         </ul>
       </div>
-      <div className="S1pic" style={{backgroundImage: `url(${servicesSection1})`}}>
+      <div ref={picRef} className="S1pic animate-fade-in delay-700" style={{backgroundImage: `url(${servicesSection1})`}}>
       </div>
     </div>
   )

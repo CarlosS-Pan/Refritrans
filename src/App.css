@@ -18,6 +18,14 @@
     transform: translateY(0);
 }
 
+.animate-fade-in {
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+.animate-fade-in.visible {
+    opacity: 1;
+}
+
 .delay-300 {
     transition-delay: 300ms;
 } 
