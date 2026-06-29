@@ -17,21 +17,18 @@ function ServicesHero() {
           <div className="flex serhero-info-container">
             <div className="serhero-title">
               <h1 ref={ h1ServicesHeroRef } className="animate-y delay-300">
-                Cuidado Integral para tus Sistemas de Refrigeracion en Ruta
+                Cuidado Integral para tus Sistemas de Refrigeración en Ruta
               </h1>
             </div>
             <div className="serhero-info">
               <p ref={ pServicesHeroRef } className="animate-x delay-700">
-                Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. 
-                Molestias non fugit autem deserunt 
-                voluptate similique laudantium, nesciunt 
-                odit accusantium eos porro ipsa quo
-                temporibus vel ex, qui quia, officiis aut?
+                Ofrecemos una amplia variedad de servicios para sus equipos y transportes refrigerados.<br/>
+                Además de Asistencia en carretera y mantenimiento de unidades de vehículos, 
+                ofrecemos instalación de GPS y monitoreo de temperaturas remoto.
               </p>
             </div>
             <NavLink to="/Contacto" className="flex white-btn">
-              <p>Contactanos</p>
+              <p>Contáctanos</p>
               <div className="flex">
                 <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
               </div>

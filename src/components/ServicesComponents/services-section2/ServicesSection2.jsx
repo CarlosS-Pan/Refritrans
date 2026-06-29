@@ -11,14 +11,13 @@ function ServicesSection2() {
       <div className="flex section2-container">
         <img src={Ice} alt=""/>
         <h1>
-          Lorem Ipsum
+          Ponte en contacto
         </h1>
         <p>
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
+          Ponte en contacto directo con nosotros para aclarar dudas y agendar una cita
         </p>
         <NavLink to="/Contacto" className="flex white-btn">
-          <p>Contactanos</p>
+          <p>Contáctanos</p>
           <div className="flex">
             <FontAwesomeIcon icon={faArrowRight} size="sm" rotateBy className="btn-rotation" style={{color:"white"}}/>
           </div>

@@ -19,10 +19,9 @@ function Section1Services() {
     <div className="flex S1container">
       <div className="flex S1info">
         <h1>
-          Lorem ipsum
+          Nuestros Servicios
         </h1>
-        <p> Lorem ipsum dolor sit, 
-          amet consectetur adipisicing elit.
+        <p> Le ofrecemos una gran variedad de servicios como:
         </p>
         <ul className="flex bullets-container">
           {bullets.map(({id,icon, text},i) => (
