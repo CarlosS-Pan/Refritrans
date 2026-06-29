@@ -1,5 +1,8 @@
 import { useEffect, useRef } from "react";
 
+/**@param {number} threshold - Percentage of the element that must be visible
+ *in viewport before the animation is triggered
+ **/
 const useAnimateListOnScroll = (threshold = 0.5) => {
   const refs = useRef([]);
 
